@@ -5,11 +5,7 @@ import cloudinary.uploader
 app = Flask(__name__)
 
 # Cấu hình Cloudinary
-cloudinary.config(
-    cloud_name="drumgqpyw",
-    api_key="624928841913934",
-    api_secret="3thQ6zR2yBLJ44moos4yitFFkUE"
-)
+
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
